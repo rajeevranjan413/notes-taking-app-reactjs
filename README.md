@@ -8,11 +8,17 @@ This project is organized as follows:
 
 ```bash
 ├── src/                   # React source files
-    ├── components/        # Reusable components
-    ├── hooks/             # Custom React hooks
-    ├── utils/             # Utility functions
-    └── styles/            # Application styles
+│   ├── assets/            # Static assets (images, icons)
+│   ├── components/        # Reusable components (Note, NoteForm, NoteList)
+│   ├── hooks/             # Custom React hooks
+│   ├── utils/             # Utility functions
+│   ├── styles/            # Application styles
+│   ├── App.css            # Main app styles
+│   ├── App.jsx            # Main app component
+│   ├── MyContext.js       # Context API setup
+│   └── main.jsx           # Entry point of the application
 ├── public/                # Public assets (HTML, images)
+│   └── index.html         # Main HTML file
 └── README.md              # Project documentation (this file)
 ```
 
@@ -77,21 +83,6 @@ localStorage.setItem("notes", JSON.stringify(notes));
 // Retrieve notes from LocalStorage
 const storedNotes = JSON.parse(localStorage.getItem("notes"));
 ```
-
-## Folder Structure
-
-```bash
-├── src/
-│   ├── components/        # React components (Note, NoteForm, NoteList)
-│   ├── styles/            # CSS or SCSS styles
-│   └── App.js             # Main app component
-├── public/                # Public files (index.html)
-└── README.md              # This file
-```
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
 ## Contact
 
